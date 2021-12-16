@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="pro-text-editor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Text Editor</title>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="parent">
+            <div class="first">
+                <input type="text" class="me-1" placeholder="Search Text" id="search">
+                <button class="me-3 bey" onclick="searchText()"> Search</button>
+                <input type="text" class="me-1" placeholder="Replace Text With" id="replace">
+                <button onclick="replaceText()" class="bay"> Replace</button>
+            </div>
+            <div>
+                <h5 id="result"></h5>
+            </div>
+            <div class="edit">
+                <button onclick="boldText()">B</button>
+                <button onclick="italicText()"><em>I</em></button>
+                <button onclick="underlineText()">U</button>
+                <button onclick="paragraphText()">P</button>
+                <button onclick="justifyLeft()"><i class="fa fa-align-left"></i></button>
+                <button onclick="justifyCenter()"><i class="fa fa-align-center"></i></button>
+                <button onclick="justifyRight()"><i class="fa fa-align-right"></i></button>
+                <button onclick="justify()"><i class="fa fa-align-justify"></i></button>
+                <input type="color" id="colour" oninput="colr()">
+                <select name="" id="">
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="18">18</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+            
+            <div>
+                <div name="" id="textbox" cols="30" rows="10" contenteditable="true"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="pro-text-editor.js"></script>
+</body>
+</html>
